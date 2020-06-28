@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="Mlogin">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -40,7 +40,7 @@
            
         </div>
     </nav>
-
+<!-- ------------------------------------------------------------------------------------------- -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -78,6 +78,78 @@
             </div>
         </div>
     </div>
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header top">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="defaultCheck1" class="col-lg-2 col-form-label"> Numbers of Guest</label>
+                            <div class="col-lg-8">
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="1" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1"> 1</label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="2" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck1"> 2</label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="3" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck1">3</label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="4" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck1"> 4</label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="5" id="defaultCheck5">
+                                    <label class="form-check-label" for="defaultCheck1"> 5</label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" value="6" id="defaultCheck6">
+                                    <label class="form-check-label" for="defaultCheck1"> 6</label>
+                                  </div>
+                            </div>
+                            </div>
+                           <div class="form-group row">
+                               <label for="section" class="col-12 col-lg-2">Section</label>
+                               <div class="col-12 col-lg-10">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-sm btn-success">Non-Smoking</button>
+                                    <button type="button" class="btn btn-sm btn-danger">Smoking</button>
+                                  </div>
+                               </div>
+                           </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-lg-2">Date and Time</label>
+                            <div class="col-12 col-lg-3">
+                                <input type="number" class="form-control" id="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <input type="email" class="form-control" id="time"  placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-lg-2 col-lg-10">
+                                <button type="submit" class="btn btn-secondary">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------- -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -89,8 +161,10 @@
                     <img src="img/logo.png" class="image-fluid" alt="logo">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#table" data-toggle="tooltip" data-html="true" title="or call us at<br><strong>+918052992594" data-placement="bottom"
-                    class="btn btn-warning btn-block">Reserve Table</a>
+                    <!-- <a href="#table" data-toggle="tooltip" data-html="true" title="or call us at<br><strong>+918052992594" data-placement="bottom"
+                    class="btn btn-warning btn-block">Reserve Table</a> -->
+                    <a id="MR"
+                        class="btn btn-warning btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -205,7 +279,7 @@
                 <h2 class="card-header bg-warning text-white font-weight-bold">Reserve a table</h2>
 
                 <div class="card-body">
-                    <form>
+                    <!-- <form>
                         <div class="form-group row">
                             <label for="defaultCheck1" class="col-lg-2 col-form-label"> Numbers of Guest</label>
                             <div class="col-lg-8">
@@ -250,7 +324,7 @@
                                 <button type="submit" class="btn btn-primary">Reserve</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>

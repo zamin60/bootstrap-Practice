@@ -2,6 +2,18 @@
     //     $('[data-toggle="tooltip"]').tooltip();
     // });
     $(document).ready(function(){
+      $("#Mlogin").click(function(){
+        $('#loginModal').modal('show');
+      });
+      
+      $("#MR").click(function(){
+        $('#reserveModal').modal('show');
+      });
+
+
+
+
+
         $(".carousel").carousel({interval:500});
 
         $("#carouselBtn").click(function(){
